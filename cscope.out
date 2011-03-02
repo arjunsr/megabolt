@@ -1,0 +1,69 @@
+cscope 15 $HOME/Desktop/Project/megabolt               0000000301
+	@main.cpp
+
+1 
+	~<QAµliÿtiÚ
+>
+
+2 
+	~<QWidg‘
+>
+
+3 
+	~"ui_dm_maš_wšdow.h
+"
+
+4 
+usšg
+ 
+Çme¥aû
+ 
+	gui
+;
+
+5 
+	$maš
+(
+¬gc
+,*
+¬gv
+[]){
+
+6 
+QAµliÿtiÚ
+ 
+	`­p
+(
+¬gc
+,
+¬gv
+);
+
+7 
+dmmašwšdow
+ 
+ui
+;
+
+8 
+Q
+
+
+9 
+ui
+.
+	`£tupUi
+();
+
+10 
+	}
+}
+
+	@
+1
+.
+1
+/usr/include
+1
+9
+main.cpp

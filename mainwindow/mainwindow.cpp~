@@ -1,0 +1,34 @@
+#include<QtGui>
+#include<QApplication>
+#include "mainwindow.h"
+
+MainWindow::MainWindow(QWidget *parent) :QMainWindow(parent){
+	setupUi(this);
+	setupActions();
+}
+
+void MainWindow::setupActions(){
+	connect(actionQuit,SIGNAL(triggered(bool)),qApp,SLOT(quit()));
+	connect(actionAdd,SIGNAL(triggered(bool)),this,SLOT(add()));
+	connect(actionAbout,SIGNAL(triggered(bool)),this,SLOT(about()));
+}
+
+void MainWindow::add(){
+      AddDialog add_dialog(this);
+      add_dialog.exec();
+}
+
+void MainWindow::about(){
+	QMessageBox::about(this,tr("About"),tr("<h1>MegaBolt</h1>\nVersion 0.1\n"));
+}
+
+
+AddDialog::AddDialog(QWidget *parent): QDialog(parent){
+	QWidget  *add=new QWidget(this);
+	QHBoxLayout *addLineLayout=new QHBoxLayout(add);
+	QLineEdit *line=new QLineEdit();
+	QPushButton *but_add=new QPushButton(tr("add"));
+	addLineLayout->addWidget(line);
+	addLineLayout->addWidget(but_add);
+	add->show();
+}
